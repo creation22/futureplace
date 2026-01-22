@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #a3e635;
+  /* lime-400 */
+  --color-secondary: #000000;
+  --font-display: "Courier New", Courier, monospace;
+  --font-sans: "Arial", "Helvetica Neue", sans-serif;
+  --breakpoint-3xl: 1920px;
+
+  --shadow-neo: 4px 4px 0px 0px #000000;
+  --shadow-neo-lg: 8px 8px 0px 0px #000000;
+  --shadow-neo-sm: 2px 2px 0px 0px #000000;
+}
+
+:root {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 500;
+
+  color-scheme: light;
+  color: #000000;
+  background-color: #fde047;
+  /* bright yellow background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fde047;
+  /* yellow-300 */
+  border: 4px solid black;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+@layer utilities {
+  .shadow-neo {
+    box-shadow: 4px 4px 0px 0px #000000;
+  }
+
+  .shadow-neo-lg {
+    box-shadow: 8px 8px 0px 0px #000000;
+  }
+
+  .shadow-neo-sm {
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+
+  .neo-border {
+    border: 3px solid #000000;
+  }
+}
