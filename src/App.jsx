@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { WorldMap } from './components/WorldMap';
 import { questions, cityData, initialValidCities } from './data/gameData';
 
@@ -53,6 +54,7 @@ function App() {
 
   return (
     <div className="relative w-full h-screen bg-yellow-300 overflow-hidden flex flex-col md:flex-row font-mono">
+      <Analytics />
 
       {/* Sidebar / HUD - Neo-Brutalism */}
       <div className="md:w-80 w-full bg-white border-r-4 border-black p-6 flex flex-col z-10 shrink-0 h-auto md:h-full max-h-[30vh] md:max-h-full overflow-y-auto">
